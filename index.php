@@ -33,8 +33,8 @@ $readresult=mysqli_query($Link,$read);
 	echo "<tr><td>原始網址</td><td>短網址</td><td>點擊率</td><td>上傳時間</td>";
 while($result=mysqli_fetch_array($readresult)){
 	echo "<tr>";
-	echo "<td><a href=".$result[1]."></td>";
-	echo "<td><a href=".$result[2]."></td>";
+	echo "<td><a href="$result[1]">".$result[1]."</td>";
+	echo "<td><a href="$result[2]">".$result[2]."</td>";
 	echo "<td>".$result[4]."</td><td>".$result[3]."</td>";
 	echo "</tr>";
 }
